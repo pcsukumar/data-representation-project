@@ -9,6 +9,13 @@ __pycache__/
 
 #Venv
 /venv
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Distribution / packaging
 .Python
