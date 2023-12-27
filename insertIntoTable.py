@@ -3,7 +3,7 @@ import mysql.connector
 db = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="root",
+  password="",
   #user="datarep",  # this is the user name on my mac
   #passwd="password" # for my mac
   database="employee"
@@ -11,7 +11,7 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 sql="insert into employee (name, position, age) values (%s,%s, %s)"
-values = ("Jacob", "Programmer", 37)
+values = ("Sara", "Assistant", 35)
 
 cursor.execute(sql, values)
 
