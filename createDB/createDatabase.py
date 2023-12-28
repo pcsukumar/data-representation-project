@@ -1,12 +1,11 @@
+#To create a database named employee
 import mysql.connector
 
 db = mysql.connector.connect(
   host="localhost",
   user="root",
   password=""
-  #user="datarep",  # this is the user name on my mac
-  #passwd="password" # for my mac
-)
+  )
 
 cursor = db.cursor()
 
