@@ -60,7 +60,7 @@ def update(id):
         foundEmployee['position'] = reqJson['position']
     if 'age' in reqJson:
         foundEmployee['age'] = reqJson['age']
-    values = (foundEmployee['title'],foundEmployee['author'],foundEmployee['price'],foundEmployee['id'])
+    values = (foundEmployee['name'],foundEmployee['position'],foundEmployee['age'],foundEmployee['id'])
     employeeDAO.update(values)
     return jsonify(foundEmployee)
         
