@@ -21,32 +21,43 @@
                 
             </table>
         </div>
+
         <div id='createUpdateForm' style="display: none">
-                <h2><span id="createLabel">Create a</span> <span id="updateLabel">Update</span> Employee</h2>
-                <input type="hidden" name="id"/>
+            <h2><span id="createLabel">Create a</span> <span id="updateLabel">Update</span> Employee</h2>
+            <input type="hidden" name="id" />
+        
+        
+            <div class="container mt-5">
+                <div >
+                  <div class="col-md-6">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="position">Author</label>
+                        <input type="text" class="form-control" id="position" name="position" placeholder="Enter position">
+                      </div>
+              
+                      <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" name="age" placeholder="Enter age">
+                      </div>
+              
+                    </form>
+                  </div>
+                </div>
+              </div>
 
-                <form>
-                    <div class="row">                    
-                        <div class="col-md-5 mb-3">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="name">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 mb-3">
-                            <label for="position">Position</label>
-                            <input type="text" class="form-control" id="position" name="position">
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <label for="age">Age</label>
-                            <input type="number" class="form-control" id="age" name="age">
-                        </div>
-                    </div>
 
-                <span><button id="doCreateButton" onclick="doCreate()">Create</button></span>
-                <span><button id="doUpdateButton" onclick="doUpdate()">Update</button></span>
+            <span><button class="btn btn-primary mb-3" id="doCreateButton" onclick="doCreate()">Create</button></span>
+            <span><button class="btn btn-primary mb-3" id="doUpdateButton" onclick="doUpdate()">Update</button></span>
         </div>
     </body>
+
+    
     <script>
     function showCreate(){
         document.getElementById('showCreateButton').style.display="none"
