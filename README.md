@@ -1,6 +1,8 @@
 # Data Representation Project
 This repository contains the files for the final project of Data Representation module.
 
+This is an employee database created using Flask and the web interface can be used to perform CRUD operations on the database. Basic information about each employee is present in the database. That is; ID, Name, Position and Age. This is basically a rehash of the sample lab project. 
+
 Following is the URL to access the pythonanywhere deployment
 
 https://psukumar.pythonanywhere.com/employee.html
