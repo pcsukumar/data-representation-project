@@ -5,11 +5,11 @@
        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="container">
         <h1>Employees</h1>
-        <div> <button id="showCreateButton" onclick="showCreate()">Create</button></div>
-        <div>
-            <table class="table" id="employeeTable">
+        <div> <button class="btn btn-primary mb-3" id="showCreateButton" onclick="showCreate()">Create</button></div>
+        <div class="table-responsive">
+            <table class="table table-striped" style="width: 95%;" id="employeeTable">
                 <tr>
                         <th>ID</th>
                         <th>Name</th>
@@ -21,14 +21,35 @@
                 
             </table>
         </div>
-        <div id='createUpdateForm' style="display: none">
-                <h2><span id="createLabel">Create a</span> <span id="updateLabel">update</span> Employee</h2>
-                <input type="hidden" name="id"/>
-                Name <input type="text" name="name" /><br/>
-                Position <input type="text" name="position"/> <br/>
-                Age <input type="number" name="age"/> <br/>
-                <span><button id="doCreateButton" onclick="doCreate()">Create</button></span>
-                <span><button id="doUpdateButton" onclick="doUpdate()">Update</button></span>
+        <div id="createUpdateForm" style="display:none">
+            <h4><span id="createLabel">Create a</span> <span id="updateLabel">Update this</span> Book</h4>
+            <form>
+                <div class="row">
+                    <div class="col-md-2 mb-3">
+                        <label for="id">ID</label>
+                        <input type="text" class="form-control" id="id" name="id">
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 mb-3">
+                        <label for="position">Position</label>
+                        <input type="text" class="form-control" id="position" name="position">
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                </div>
+           
+            <span><button id="button-doCreate" class="btn btn-primary mb-3" onclick="doCreate()">Create</button></span>
+ 			<span><button id="button-doUpdate" class="btn btn-primary mb-3" onclick="doUpdate()">Home</button></span>
+             <!-- "display:none" will make it hidden-->
+
+
         </div>
     </body>
     <script>
