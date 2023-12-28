@@ -1,3 +1,4 @@
+#Create a server
 from flask import Flask, jsonify, request, abort
 from employeeDAO import employeeDAO
 
