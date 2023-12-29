@@ -7,7 +7,7 @@ Following is the URL to access the pythonanywhere deployment.
 https://psukumar.pythonanywhere.com/employee.html
 
 
-I have crated another pythonanywhere deployment with employee name split into first name and last name.
+I have created another pythonanywhere deployment with employee name split into first name and last name.
 https://psukumar2.pythonanywhere.com/employee.html
 
 
