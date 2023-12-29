@@ -227,7 +227,7 @@
         //var car = {"reg":"12 D 1234","price":8000}
         console.log(JSON.stringify(employee));
         $.ajax({
-            "url": "http://127.0.0.1:5000/employees"+encodeURI(employee.id),
+            "url": "http://127.0.0.1:5000/employees/"+encodeURI(employee.id),
             "method":"PUT",
             "data":JSON.stringify(employee),
             "dataType": "JSON",
@@ -245,7 +245,7 @@
         
         //console.log(JSON.stringify('deleting '+id));
         $.ajax({
-            "url": "http://127.0.0.1:5000/employees"+encodeURI(id),
+            "url": "http://127.0.0.1:5000/employees/"+encodeURI(id),
             "method":"DELETE",
             "data":"",
             "dataType": "JSON",
