@@ -11,7 +11,7 @@
         <div class="table-responsive">
             <table class="table table-striped" style="width: 95%;" id="employeeTable">
                 <tr>
-                        <th>id</th>
+                        <th>ID</th>
                         <th>Name</th>
                         <th>Position</th>
                         <th>Age</th>
@@ -23,7 +23,7 @@
         </div>
 
         <div id='createUpdateForm' style="display: none">
-            <h2><span id="createLabel">Create a</span> <span id="updateLabel">Update</span> Employee</h2>
+            <h2><span id="createLabel">Create an</span> <span id="updateLabel">Update</span> Employee</h2>
             <input type="hidden" name="id" />
         
         
@@ -138,7 +138,7 @@
         var cell5 = rowElement.insertCell(4);
         cell5.innerHTML = '<button onclick="showUpdate(this)">Update</button>'
         var cell6 = rowElement.insertCell(5);
-        cell6.innerHTML = '<button onclick=doDelete(this)>delete</button>'
+        cell6.innerHTML = '<button onclick=doDelete(this)>Delete</button>'
 
     }
 
