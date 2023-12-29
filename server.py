@@ -20,9 +20,9 @@ def getAll():
 #curl "http://127.0.0.1:5000/employees/2"
 @app.route('/employees/<int:id>')
 def findById(id):
-    foundBook = employeeDAO.findByID(id)
+    foundEmployee = employeeDAO.findByID(id)
 
-    return jsonify(foundBook)
+    return jsonify(foundEmployee)
 
 #curl  -i -H "Content-Type:application/json" -X POST -d "{\"name\":\"hello\",\"position\":\"someone\",\"age\":123}" http://127.0.0.1:5000/employees
 @app.route('/employees', methods=['POST'])
